@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhumireddy Sahithi | Student Developer & Web Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Bhumireddy Sahithi, a Computer Science student developer specializing in building clean, responsive web applications and full-stack software solutions.">
+    <meta name="keywords" content="Bhumireddy Sahithi, Sahithi, Student Developer, Computer Science, Web Developer, JavaScript, Portfolio, React, Next.js">
+    <meta name="author" content="Bhumireddy Sahithi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bhumireddy Sahithi | Student Developer & Web Engineer">
+    <meta property="og:description" content="Explore Bhumireddy Sahithi's portfolio of web applications, student projects, and clean UI solutions.">
+    <meta property="og:image" content="assets/nexthire.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Bhumireddy Sahithi | Student Developer & Web Engineer">
+    <meta property="twitter:description" content="Explore Bhumireddy Sahithi's portfolio of web applications, student projects, and clean UI solutions.">
+    <meta property="twitter:image" content="assets/nexthire.png">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" id="logo-link">
+                Sahithi<span>.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Theme">
+                    <!-- Sun Icon (Light Mode) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="M4.93 4.93l1.41 1.41"></path>
+                        <path d="M17.66 17.66l1.41 1.41"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M6.34 17.66l-1.41 1.41"></path>
+                        <path d="M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (Dark Mode) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+    <section class="hero" id="home">
+        <!-- Interactive Canvas Background -->
+        <canvas class="hero-canvas" id="particle-canvas"></canvas>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Open to internships and open-source projects
+                </div>
+                <h1 class="hero-title">
+                    Building <span class="gradient-text">Software</span> for the Next Generation.
+                </h1>
+                <div class="hero-subtitle">
+                    I am a <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
+                </div>
+                <p class="hero-desc">
+                    Hi! I'm Bhumireddy Sahithi, a 2nd-year Computer Science and Engineering student. I am passionate about learning, constructing responsive frontend systems, and solving real-world challenges through code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       About & Experience Section
+       ========================================================================== -->
+    <section class="section" id="about">
+        <div class="grid-mesh"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-desc">Learn about my academic background, programming goals, and the projects I work on as a student.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-photo-wrapper">
+                    <div class="about-photo-frame">
+                        <img src="assets/bhumireddy_sahithi.jpg" alt="Bhumireddy Sahithi Profile Portrait">
+                    </div>
+                    <div class="about-photo-decor"></div>
+                </div>
+                
+                <div class="about-bio">
+                    <h3>Learning, building, and engineering user-centric web applications.</h3>
+                    <p>
+                        I am currently in my 2nd year of studying Computer Science and Engineering. Ever since I wrote my first lines of code, I've been fascinated by how logic can create impactful applications. I focus on developing modular web projects, learning database management, and staying updated with modern developer tooling.
+                    </p>
+                    <p>
+                        My academic coursework and self-directed study help me bridge theoretical algorithms with hands-on practice. I enjoy building platforms that improve utility for local enterprises and users alike, such as e-commerce showcases and hiring management tools.
+                    </p>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Category Tabs & Pane -->
+            <div class="skills-tabs-container">
+                <div class="skills-tabs">
+                    <button class="skills-tab-btn active" data-tab="frontend">Frontend Stack</button>
+                    <button class="skills-tab-btn" data-tab="backend">Backend & Databases</button>
+                    <button class="skills-tab-btn" data-tab="creative">Tools & Techs</button>
+                </div>
+                
+                <!-- Frontend Skills Pane -->
+                <div class="skills-pane active glass-card" id="frontend-pane">
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 22l10-4 10 4L12 2zm0 3.8l6.3 12.6-6.3-2.5-6.3 2.5L12 5.8z"/></svg>
+                        <span>HTML5 / Semantic</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 22l10-4 10 4L12 2zm0 3.8l6.3 12.6-6.3-2.5-6.3 2.5L12 5.8z"/></svg>
+                        <span>CSS3 / Layouts</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm12.5 13.5c0-.8-.7-1.5-1.5-1.5H12v-2h2c1.1 0 2-.9 2-2V9.5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v1h2v-1h2v2H11c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h3c1.1 0 1.5-.7 1.5-1.5z"/></svg>
+                        <span>ES6+ JavaScript</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 22l10-4 10 4L12 2zm0 3.8l6.3 12.6-6.3-2.5-6.3 2.5L12 5.8z"/></svg>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span>Responsive UI</span>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills Pane -->
+                <div class="skills-pane glass-card" id="backend-pane">
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>Node.js / Express</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>Java Programming</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span>SQL Databases</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>MongoDB / SQL</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                
+                <!-- Tools Skills Pane -->
+                <div class="skills-pane glass-card" id="creative-pane">
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>Git & GitHub</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>Figma Design</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="skill-tag">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        <span>C / Python basics</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Academic & Project Timeline -->
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h4 class="timeline-title">B.Tech Student (Computer Science)</h4>
+                        <div class="timeline-company">Engineering University</div>
+                        <p class="timeline-desc">Acquiring foundations in object-oriented programming, data structures, database design, and software engineering methodologies.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2025</span>
+                        <h4 class="timeline-title">Project Creator - NextHire</h4>
+                        <div class="timeline-company">GitHub Showcase</div>
+                        <p class="timeline-desc">Engineered NextHire, a portal supporting job vacancy listings and recruitment pipelines using React and Next.js.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2025</span>
+                        <h4 class="timeline-title">Web Developer - Local Businesses</h4>
+                        <div class="timeline-company">Client Showcase</div>
+                        <p class="timeline-desc">Designed and deployed user-friendly storefront catalogs for local operations including The Cashew House and Mayookha Saree Rolling Center.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       Projects Gallery Section
+       ========================================================================== -->
+    <section class="section" id="projects">
+        <div class="grid-mesh"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-desc">A gallery of my key web applications and open-source project repositories.</p>
+            </div>
+            
+            <!-- Projects Grid (Filters removed as requested) -->
+            <div class="projects-grid">
+                
+                <!-- Project Card 1 (NextHire) -->
+                <article class="project-card glass-card" id="project-card-1">
+                    <div class="project-img-wrapper">
+                        <img src="assets/nexthire.png" alt="NextHire Dashboard Mockup">
+                        <div class="project-img-overlay">
+                            <button class="project-link-icon trigger-modal-btn" data-project="nexthire" aria-label="Open detailed modal for NextHire">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Recruitment</span>
+                        </div>
+                        <h3 class="project-title">NextHire</h3>
+                        <p class="project-desc">A comprehensive job hiring portal designed to connect recruiters with potential job seekers, featuring dynamic listings and user applications.</p>
+                        <div class="project-footer">
+                            <button class="project-view-details trigger-modal-btn" data-project="nexthire">
+                                View Details 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </button>
+                            <div class="project-external-links">
+                                <a href="https://github.com/Sahithi-630/NextHire.git" target="_blank" rel="noopener" class="project-ext-link" aria-label="NextHire Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 2 (Mayookha Saree Rolling) -->
+                <article class="project-card glass-card" id="project-card-2">
+                    <div class="project-img-wrapper">
+                        <img src="assets/mayookha_saree_rolling.png" alt="Mayookha Saree Rolling Mockup">
+                        <div class="project-img-overlay">
+                            <button class="project-link-icon trigger-modal-btn" data-project="mayookha_saree_rolling" aria-label="Open detailed modal for Mayookha Saree Rolling">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Service Booking</span>
+                        </div>
+                        <h3 class="project-title">Mayookha Saree Rolling Center</h3>
+                        <p class="project-desc">A structured service showcase web page presenting options and scheduling for a local saree rolling and processing center.</p>
+                        <div class="project-footer">
+                            <button class="project-view-details trigger-modal-btn" data-project="mayookha_saree_rolling">
+                                View Details 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </button>
+                            <div class="project-external-links">
+                                <a href="https://github.com/Sahithi-630/mayookha_saree_rolling_center.git" target="_blank" rel="noopener" class="project-ext-link" aria-label="Mayookha Saree Rolling Center Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project Card 3 (The Cashew House) -->
+                <article class="project-card glass-card" id="project-card-3">
+                    <div class="project-img-wrapper">
+                        <img src="assets/the_cashew_house.png" alt="The Cashew House Mockup">
+                        <div class="project-img-overlay">
+                            <button class="project-link-icon trigger-modal-btn" data-project="the_cashew_house" aria-label="Open detailed modal for The Cashew House">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">E-Commerce</span>
+                            <span class="project-tag">Vanilla JS</span>
+                        </div>
+                        <h3 class="project-title">The Cashew House</h3>
+                        <p class="project-desc">An online catalog interface demonstrating dried fruit grades and supporting pre-orders for a premium local cashew distributor.</p>
+                        <div class="project-footer">
+                            <button class="project-view-details trigger-modal-btn" data-project="the_cashew_house">
+                                View Details 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </button>
+                            <div class="project-external-links">
+                                <a href="https://github.com/Sahithi-630/The_Cashew_House.git" target="_blank" rel="noopener" class="project-ext-link" aria-label="The Cashew House Repository">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       Contact Form Section
+       ========================================================================== -->
+    <section class="section" id="contact">
+        <div class="grid-mesh"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Connect</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-desc">Drop me a message to discuss a potential student internship, project, or general coding questions.</p>
+            </div>
+            
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <div class="contact-heading">
+                        <h3>Let's build something exceptional together.</h3>
+                        <p>Feel free to reach out directly through the form on the right, or get in touch through my active digital channels.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <!-- Direct Email -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-text">
+                                <label>Direct Mail</label>
+                                <p><a href="mailto:bhumireddysahithi@gmail.com">bhumireddysahithi@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <!-- Location -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-text">
+                                <label>Location</label>
+                                <p>Rajahmundry, Andhra pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Icons links -->
+                    <div class="contact-socials">
+                        <a href="https://github.com/Sahithi-630" target="_blank" rel="noopener" class="contact-social-btn" aria-label="Sahithi Github link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bhumireddy-sahithi-744087310/" target="_blank" rel="noopener" class="contact-social-btn" aria-label="Sahithi LinkedIn Profile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Form Area -->
+                <div class="contact-form-wrapper glass-card">
+                    <form class="contact-form" id="portfolio-contact-form" novalidate>
+                        <!-- Form Success Overlay -->
+                        <div class="form-success-card" id="form-success-card">
+                            <div class="success-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <h4 class="success-title">Message Sent!</h4>
+                            <p class="success-desc">Thank you for your message, Sahithi will get back to you shortly.</p>
+                            <button type="button" class="btn btn-secondary" id="reset-form-btn" style="margin-top: 1.5rem;">Send Another</button>
+                        </div>
+                        
+                        <!-- Name Input -->
+                        <div class="form-group">
+                            <input type="text" id="contact-name" class="form-input" placeholder=" " required>
+                            <label for="contact-name" class="form-label">Full Name</label>
+                            <span class="form-error" id="name-error">Please enter your name.</span>
+                        </div>
+                        
+                        <!-- Email Input -->
+                        <div class="form-group">
+                            <input type="email" id="contact-email" class="form-input" placeholder=" " required>
+                            <label for="contact-email" class="form-label">Email Address</label>
+                            <span class="form-error" id="email-error">Please enter a valid email.</span>
+                        </div>
+                        
+                        <!-- Subject Input -->
+                        <div class="form-group">
+                            <input type="text" id="contact-subject" class="form-input" placeholder=" " required>
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <span class="form-error" id="subject-error">Subject cannot be empty.</span>
+                        </div>
+                        
+                        <!-- Message Textarea -->
+                        <div class="form-group">
+                            <textarea id="contact-message" class="form-input" rows="4" placeholder=" " required></textarea>
+                            <label for="contact-message" class="form-label">Message Details</label>
+                            <span class="form-error" id="message-error">Message must be at least 10 characters.</span>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                            <span class="btn-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       Project Details Modal / Slide Drawer
+       ========================================================================== -->
+    <div class="modal-overlay" id="project-details-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-drawer" id="modal-drawer">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Project Title</h3>
+                <div class="modal-tags" id="modal-tags"></div>
+            </div>
+            
+            <img src="" alt="Project Visual Preview" class="modal-hero-img" id="modal-image">
+            
+            <div class="modal-content-grid">
+                <div class="modal-description">
+                    <h4>Overview</h4>
+                    <p id="modal-desc-full">Full project description text...</p>
+                    
+                    <h4>Key Features</h4>
+                    <ul class="modal-features-list" id="modal-features"></ul>
+                </div>
+                
+                <aside class="modal-sidebar">
+                    <div class="modal-sidebar-card">
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">Context</span>
+                            <span class="modal-meta-value" id="modal-meta-client">Client details</span>
+                        </div>
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">My Role</span>
+                            <span class="modal-meta-value" id="modal-meta-role">Lead Developer</span>
+                        </div>
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">Timeline</span>
+                            <span class="modal-meta-value" id="modal-meta-timeline">Duration</span>
+                        </div>
+                        <div class="modal-meta-item">
+                            <span class="modal-meta-label">Technology Stack</span>
+                            <div class="modal-meta-tech-list" id="modal-meta-tech"></div>
+                        </div>
+                        
+                        <div class="modal-sidebar-links">
+                            <a href="#" class="btn btn-primary" id="modal-live-link" target="_blank" rel="noopener">
+                                Visit Live Website 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a href="#" class="btn btn-secondary" id="modal-code-link" target="_blank" rel="noopener">
+                                View Source Code 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-copyright" id="footer-copyright">
+                &copy; <span id="current-year">2026</span> Bhumireddy Sahithi. All rights reserved. Made with &hearts; in Rajahmundry.
+            </div>
+            
+            <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+        </div>
+    </footer>
+
+    <!-- JavaScript Execution Logic -->
+    <script src="js/app.js"></script>
+</body>
+</html>
